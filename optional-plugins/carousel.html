@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Website for [Your bands name here] [additional content]" />
+  <meta name="author" content="[Your name here]">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Your bands name here]</title>
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/normalize.min.css" />
+  <!-- OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/plugins/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/plugins/slick-theme.css" />
+  <!-- END OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" style="background: #ddd;">
+    <div class="container">
+      <h1 class="title">Carousel Plugin</h1>
+      <div class="image-carousel">
+        <div><img src="http://placehold.it/350x350" /></div>
+        <div><img src="http://placehold.it/350x350" /></div>
+        <div><img src="http://placehold.it/350x350" /></div>
+        <div><img src="http://placehold.it/350x350" /></div>
+        <div><img src="http://placehold.it/350x350" /></div>
+        <div><img src="http://placehold.it/350x350" /></div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<script src="../assets/javascripts/jquery.min.js"></script>
+<script src="../assets/javascripts/plugins/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    console.log('jquery is enabled');
+    $('.image-carousel').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: true,
+      accessibility: true,
+    });
+  });
+</script>
+</html>

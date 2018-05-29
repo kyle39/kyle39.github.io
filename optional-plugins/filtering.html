@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Website for [Your bands name here] [additional content]" />
+  <meta name="author" content="[Your name here]">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Your bands name here]</title>
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/normalize.min.css" />
+  <!-- OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/plugins/filterizr.css" />
+  <!-- END OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Filtering Plugin</h1>
+      <ul>
+         <!-- For filtering controls add -->
+         <li data-filter="all"> All items </li>
+         <li data-filter="1"> City </li>
+         <li data-filter="2"> Industrial </li>
+         <li data-filter="3"> Nature</li>
+      </ul>
+      <style>
+        .filtr-item {
+          width: 25%;
+        }
+        @media screen and (max-width: 720px){
+          .filtr-item {
+            width: 100%;
+          }
+        }
+      </style>
+      <div class="filtr-container">
+        <div class="filtr-item" data-category="1" data-sort="value">
+           <img src="../assets/images/plugins/filterizr/city_1.jpg" alt="sample">
+        </div>
+        <div class="filtr-item" data-category="1" data-sort="value">
+           <img src="../assets/images/plugins/filterizr/city_2.jpg" alt="sample">
+        </div>
+        <div class="filtr-item" data-category="1, 3" data-sort="value">
+           <img src="../assets/images/plugins/filterizr/city_3.jpg" alt="sample">
+        </div>
+        <div class="filtr-item" data-category="2" data-sort="value">
+           <img src="../assets/images/plugins/filterizr/industrial_1.jpg" alt="sample">
+        </div>
+        <div class="filtr-item" data-category="2" data-sort="value">
+           <img src="../assets/images/plugins/filterizr/industrial_2.jpg" alt="sample">
+        </div>
+        <div class="filtr-item" data-category="2" data-sort="value">
+           <img src="../assets/images/plugins/filterizr/industrial_3.jpg" alt="sample">
+        </div>
+        <div class="filtr-item" data-category="3" data-sort="value">
+           <img src="../assets/images/plugins/filterizr/nature_1.jpg" alt="sample">
+        </div>
+        <div class="filtr-item" data-category="3" data-sort="value">
+           <img src="../assets/images/plugins/filterizr/nature_2.jpg" alt="sample">
+        </div>
+        <div class="filtr-item" data-category="3" data-sort="value">
+           <img src="../assets/images/plugins/filterizr/nature_3.jpg" alt="sample">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<script src="../assets/javascripts/jquery.min.js"></script>
+<script src="../assets/javascripts/plugins/jquery.filterizr.min.js"></script>
+<script>
+  $(document).ready(function(){
+    console.log('jquery is enabled');
+    $('.filtr-container').filterizr({});
+  });
+</script>
+</html>

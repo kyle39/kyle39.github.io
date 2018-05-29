@@ -1,0 +1,632 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ HOMEPAGE STYLES
+----------------------------------------------------------------------------------------------------
+*/
+
+nav{
+ margin-top: auto;
+ /* padding-top:25px; */
+ /* padding-bottom:25px; */
+ /* padding-right:50px; */
+ /* padding-left: :50px; */
+    padding:0 0 0 150px;
+ /* background:rgba(255,0,0,0.5); */
+ background:black
+}
+
+
+nav.navbar{
+  padding: 0;
+  background: black;
+}
+
+a.navbar-item{
+  color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: sans-serif;
+}
+a.navbar-item:hover{
+  color: black;
+  background-color: white;
+}
+
+.logo {
+ color:white;
+ font-size:30px;
+ padding-top:2px;
+ padding-left:30px;
+ padding-right:30px;
+ font-family: sans-serif;
+
+ }
+
+
+.hero-home{
+  background: url('../images/home/background-home.jpg') no-repeat center center;
+  background-size:cover;
+  height:750px;
+  width: 100%;
+}
+
+.home-title {
+  font-size:500%;
+  padding-top:20%;
+  padding-bottom:20%;
+  color:white;
+  font-family: inherit;
+  text-shadow:5px 5px black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+.icon {
+    margin-left: 22px;
+    padding-top: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: inline-block;
+  }
+
+  .navbar-burger {
+      height: 86px;
+      background-color: transparent;
+      margin-right: 10px;
+      position: sticky;
+  }
+
+
+
+/*
+----------------------------------------------------------------------------------------------------
+ ABOUT STYLES
+----------------------------------------------------------------------------------------------------
+*/
+.hero.--about {
+  background: url('../images/about/statechamps-about.jpg') no-repeat center center;
+  margin-top: auto;
+  width: 100%;
+  height: 600px;
+}
+
+.about-background {
+  background-color: black;
+}
+
+p.about-introduction {
+  color:white;
+padding-top:150px;
+padding-left:110px;
+padding-right:100px;
+text-align: center;
+
+}
+
+
+.band-list img{
+  width: 150px;
+  height:200px;
+  border-radius: 4px;
+  box-shadow: 0 45px 100px rgba(74, 74, 74, 0.4);
+}
+
+
+.band-list img {
+  /* float: left; */
+  width: 150px;
+  height:200px;
+  border-radius: 4px;
+  box-shadow: 0 45px 100px rgba(74, 74, 74, 0.4);
+}
+
+.subtitle {
+  font-size: 50px;
+  color:white;
+}
+
+.band-list {
+  color:white;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------
+ DISOGRAPHY STYLES
+----------------------------------------------------------------------------------------------------
+*/
+
+.section1 {
+  background-color: #E36360;
+  height:400px;
+}
+
+
+.section2 {
+  background-color: #F0DEC7;
+  height:3100px;
+
+}
+
+
+
+.section1 img{
+  width:400px;
+  heigth:400px;
+  border: 5px solid #eef;
+    border-radius: 4px;
+    padding: auto;
+}
+
+
+
+.section2 img{
+  margin-top: 250px;
+  border-radius: 4px;
+}
+
+
+.album-cover {
+  width:250px;
+  height: 250px;
+}
+
+.album-cover {
+  width:250px;
+  height:250px;
+}
+
+
+}
+
+/* .discography-banner { */ */
+  background: url('../images/discography/banner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* .album{ */
+  display: block; */
+  position: relative; */
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+  .album {
+    text-align: left;
+  }
+}
+
+  /* .album-cover{  */
+  max-width: 275px;
+  max-height: 275px;
+  border-radius: 8px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  transition: all .3s ease-in-out;
+}
+
+@media (min-width: 1024px){
+  .album-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.album-cover:hover{
+  max-width: 300px;
+  max-height: 300px;
+  box-shadow: 0 75px 175px rgba(0, 0, 0, 0.4);
+}
+
+ul.album-details{
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 1024px){
+  ul.album-details {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+.album-title{
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+ul.track-listings{
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+ul.track-listings > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+span.track-number {
+  margin-right: 10px;
+}
+
+ul-track-listings > li > .track-time {
+  text-align: right;
+}
+/*
+----------------------------------------------------------------------------------------------------
+ MEDIA STYLES
+----------------------------------------------------------------------------------------------------
+*/
+
+
+ .media-page-banner{
+  background: url('../images/media/statechamps media3.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 380px;
+}
+
+
+.media-list { */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.media-card-wrapper { */ */
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.media-card{ */ */
+  width: 225px;
+  height: 225px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.media-card > img { */ */
+  width: 100%;
+  height: 100%;
+}
+
+.media-card:hover {  */
+  width: 250px;
+  height: 250px;
+  z-index: 10;
+  box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
+}
+
+.media-list > iframe {  */
+  margin-bottom: 50px;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------
+ MERCH STYLES
+----------------------------------------------------------------------------------------------------
+*/
+
+#filter-list li {
+  display:inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+
+}
+.merch-banner {
+  background: url('../images/merch/merch.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.container-merch {
+  background:rgba(74, 74, 74,0.9);
+}
+
+ul.merch-controls {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #efefef;
+}
+
+@media (min-width: 736px){
+  ul.merch-controls {
+    flex-wrap: nowrap;
+  }
+}
+
+ul.merch-controls > li {
+  width: 100%;
+  height: auto;
+  flex-grow: 0;
+  overflow: hidden;
+}
+
+.merch-ctrl-btn {
+	height: 4rem;
+  flex-grow: 0;
+	width: 100%;
+	line-height: 24px;
+	font-size: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: none;
+	overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.merch-ctrl-btn.active {
+  background: #efefef;
+}
+
+.merch-ctrl-btn:hover {
+  cursor: pointer;
+  background: #efefef;
+}
+
+.merch-ctrl-btn span {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+  position: relative;
+	-webkit-transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0.3s;
+	-moz-backface-visibility: hidden;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+}
+
+.merch-ctrl-btn img {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.merch-ctrl-btn:hover span {
+	-webkit-transform: translateY(300%);
+	-moz-transform: translateY(300%);
+	-ms-transform: translateY(300%);
+	transform: translateY(300%);
+}
+
+.merch-ctrl-btn:hover img {
+  bottom: 15%;
+}
+
+.filtr-item {
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index:0;
+  transition: all .3s ease-in-out;
+}
+
+.filtr-item > img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.filtr-item:hover {
+  cursor: pointer;
+  top: .5rem;
+  background: #efefef;
+  z-index:10;
+}
+
+.filtr-item:hover > img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: all .3s ease-in-out;
+}
+
+.filtr-item.--sold-out:before {
+  content: "Sold Out";
+  width: 20rem;
+  height: 2rem;
+  position: absolute;
+  top: 1.5625rem;
+  right: -105px;
+  padding-top: .25rem;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -25px);
+  z-index: 1;
+  background: rgba(117,0,2, 0.85);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  transform: rotate(35deg)
+}
+
+.filtr-item.--sold-out:hover{
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: 0;
+}
+/*
+----------------------------------------------------------------------------------------------------
+ TOUR DATES STYLES
+----------------------------------------------------------------------------------------------------
+*/
+
+.tourdates-background {
+  /* font-family:sans-serif!important; */
+  /* color:#000000; */
+  background:
+     url('../images/tour-dates/tourdates-background.jpg');
+  background-size:cover;
+  /* filter: alpha(opacity=85); */
+  /* -moz-opacity:.85; */
+  /* opacity:.85; */
+  padding-top: 200px;
+  padding-bottom: 300px;
+}
+
+
+table, th{
+ border: 1px solid white;
+ background:rgba(74, 74, 74, 0.7);
+
+ }
+
+
+.tourdates-section1 {
+  background:rgba(74, 74, 74, 0.7);
+  color:white;
+  /* font-size:30px; */
+  margin-left:auto;
+  margin-right: auto;
+  width: 78%;
+}
+
+
+
+.tourdates-title1 {
+  /* padding-left: 18%; */
+  /* padding-right:18%; */
+  margin-left: 3%;
+  margin-right:20%;
+  font-size:30px;
+}
+
+.tourdates-title2 {
+  /* padding-left: 18%; */
+  /* padding-right:18%; */
+  margin-left: 36%;
+  margin-right: 1%;
+  font-size:20px;
+}
+
+.tourdates-title2 a{
+  border-color: white;
+  color:white;
+  border: 0.5px solid white;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right:5px;
+  padding-top:7px;
+}
+
+
+
+
+
+
+
+ul{
+  list-style: none;
+}
+
+
+
+/* ul>li */
+{
+  /* display:inline; */
+  /* margin-left: 50px; */
+  /* margin-right: 90px; */
+  /* line-height: 20px; */
+}
+
+
+
+table {
+    font-family: arial, sans-serif;
+    color:white;
+    border-collapse: collapse;
+    margin-top: auto;
+    margin-left:auto;
+    margin-right: auto;
+    width: 70%;
+    padding:25px 0 0 150px;
+    text-align: center
+}
+
+td, th {
+    border: 1px solid white;
+    text-align: center;
+    padding: 25px;
+}
+
+td a {
+    color: #F0DEC7;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+/*

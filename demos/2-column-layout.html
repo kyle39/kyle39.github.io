@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Website for [Your bands name here] [additional content]" />
+  <meta name="author" content="[Your name here]">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Your bands name here]</title>
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.min.css" />
+  <!-- OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <!-- END OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+        <a id="main-menu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">About</a>
+          <a class="navbar-item" href="#">Discography</a>
+          <a class="navbar-item" href="#">Media</a>
+          <a class="navbar-item" href="#">Merch</a>
+          <a class="navbar-item" href="#">Tour Dates</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">2 Column Layout</h1>
+        <h2 class="columns">
+        <div class="column">
+          <div class="column" style="border: 1px solid blue;">
+            This is the left column
+          </div>
+          <div class="column" style="border: 1px solid green; height: 250px; overflow: auto;">
+          </div>
+        </div>
+        </h2>
+        ...your main content goes here...
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        ...your footer content goes here...
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./assets/javascripts/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    console.log('jquery is enabled');
+  });
+</script>
+</html>

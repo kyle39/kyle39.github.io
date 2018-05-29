@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Website for [Your bands name here] [additional content]" />
+  <meta name="author" content="[Your name here]">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Your bands name here]</title>
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/normalize.min.css" />
+  <!-- OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/plugins/lightbox.min.css" />
+  <!-- END OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .column img {
+      border-radius: 8px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+      transition: box-shadow .5s ease-in-out;
+    }
+
+    .column img:hover{
+      cursor: pointer;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Lightbox Plugin</h1>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <a
+            href="../assets/images/plugins/lightbox/image001.jpg"
+            data-lightbox="demo-lightbox"
+            data-title="First Image">
+            <img src="../assets/images/plugins/lightbox/image001.jpg" />
+          </a>
+        </div>
+        <div class="column has-text-centered">
+          <a
+            href="../assets/images/plugins/lightbox/image002.jpg"
+            data-lightbox="demo-lightbox"
+            data-title="Second Image">
+            <img src="../assets/images/plugins/lightbox/image002.jpg" />
+          </a>
+        </div>
+        <div class="column has-text-centered">
+          <a
+            href="../assets/images/plugins/lightbox/image003.jpg"
+            data-lightbox="demo-lightbox"
+            data-title="Third Image">
+            <img src="../assets/images/plugins/lightbox/image003.jpg" />
+          </a>
+        </div>
+      </div>
+      <div class="columns has-text-centered">
+        <div class="column">
+          <a
+            href="../assets/images/plugins/lightbox/image004.jpg"
+            data-lightbox="demo-lightbox"
+            data-title="Forth Image">
+            <img src="../assets/images/plugins/lightbox/image004.jpg" />
+          </a>
+        </div>
+        <div class="column has-text-centered">
+          <a
+            href="../assets/images/plugins/lightbox/image005.jpg"
+            data-lightbox="demo-lightbox"
+            data-title="Fifth Image">
+            <img src="../assets/images/plugins/lightbox/image005.jpg" />
+          </a>
+        </div>
+        <div class="column has-text-centered">
+          <a
+            href="../assets/images/plugins/lightbox/image006.jpg"
+            data-lightbox="demo-lightbox"
+            data-title="Sixth Image">
+            <img src="../assets/images/plugins/lightbox/image006.jpg" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<script src="../assets/javascripts/jquery.min.js"></script>
+<script src="../assets/javascripts/plugins/lightbox.min.js"></script>
+<script>
+  $(document).ready(function(){
+    console.log('jquery is enabled');
+  });
+</script>
+</html>

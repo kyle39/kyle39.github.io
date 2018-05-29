@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Website for [Your bands name here] [additional content]" />
+  <meta name="author" content="[Your name here]">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Your bands name here]</title>
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/normalize.min.css" />
+  <!-- OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/plugins/jquery.fatNav.min.css" />
+  <!-- END OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Fullscreen Navigation Plugin</h1>
+    </div>
+  </section>
+
+  <div class="fat-nav">
+    <div class="fat-nav__wrapper">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Discography</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Merch</a></li>
+        <li><a href="#">Tour Dates</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="../assets/javascripts/jquery.min.js"></script>
+<script src="../assets/javascripts/plugins/jquery.fatNav.min.js"></script>
+<script>
+  $(document).ready(function(){
+    console.log('jquery is enabled');
+    $.fatNav();
+  });
+</script>
+</html>
